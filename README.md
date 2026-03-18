@@ -1,1 +1,203 @@
 index.html# Asthetic-by-you
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aesthetic By You</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: #fafafa;
+        color: #333;
+    }
+
+    header {
+        background: white;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    header h1 {
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        padding: 10px;
+        background: white;
+        border-bottom: 1px solid #eee;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #e1306c;
+    }
+
+    .hero {
+        height: 60vh;
+        background: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                    url('https://via.placeholder.com/1200x600');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    .btn {
+        margin-top: 15px;
+        padding: 10px 25px;
+        border: none;
+        background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366);
+        color: white;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .price {
+        color: #e1306c;
+        font-weight: bold;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background: white;
+        border-top: 1px solid #eee;
+        margin-top: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Aesthetic By You</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Collections</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Wear Your Vibe ✨</h2>
+    <p>Minimal • Trendy • You</p>
+    <button class="btn">Shop Now</button>
+</section>
+
+<section class="products">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x400">
+        <div class="card-content">
+            <h3>Soft Aesthetic Dress</h3>
+            <p class="price">₹999</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x400">
+        <div class="card-content">
+            <h3>Urban Hoodie</h3>
+            <p class="price">₹1299</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x400">
+        <div class="card-content">
+            <h3>Classic Sneakers</h3>
+            <p class="price">₹1499</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x400">
+        <div class="card-content">
+            <h3>Chic Handbag</h3>
+            <p class="price">₹899</p>
+        </div>
+    </div>
+</section>
+
+<div class="footer">
+    <p>© 2026 Aesthetic By You</p>
+</div>
+
+</body>
+</html>
